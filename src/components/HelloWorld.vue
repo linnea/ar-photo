@@ -10,7 +10,7 @@ export default {
 
 	created() {
 		const model = document.createElement('model-viewer');
-		model.src = '@/assets/Cactus1.gltf';
+		model.src = '@/assets/freshhat2.gltf';
 		document.body.appendChild(model);
 	},
 };

@@ -1,0 +1,2 @@
+*.glft filter=lfs diff=lfs merge=lfs -text
+*.gltf filter=lfs diff=lfs merge=lfs -text
