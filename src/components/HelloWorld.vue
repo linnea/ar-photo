@@ -1,14 +1,18 @@
 <template>
-  <div class="hello">
-    <model-viewer alt="A 3D model of an astronaut." src="assets/Cactus1.gltf" ar/>
-  </div>
+	<div/>
 </template>
 
 <script>
 import '@google/model-viewer';
 
 export default {
-  name: 'HelloWorld',
+	name: 'HelloWorld',
+
+	created() {
+		const model = document.createElement('model-viewer');
+		model.src = '@/assets/Cactus1.gltf';
+		document.body.appendChild(model);
+	},
 };
 </script>
 
