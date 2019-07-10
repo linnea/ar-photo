@@ -1,5 +1,7 @@
 <template>
-	<div/>
+  <div class="hello">
+    <model-viewer alt="A 3D model of an astronaut." src="@/assets/freshhat2.gltf" ar/>
+  </div>
 </template>
 
 <script>
@@ -7,12 +9,6 @@ import '@google/model-viewer';
 
 export default {
 	name: 'HelloWorld',
-
-	created() {
-		const model = document.createElement('model-viewer');
-		model.src = '@/assets/freshhat2.gltf';
-		document.body.appendChild(model);
-	},
 };
 </script>
 
